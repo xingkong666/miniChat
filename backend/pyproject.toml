@@ -26,3 +26,15 @@ allow-direct-references = true
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/backend"]
+
+[tool.ruff]
+line-length = 120
+
+
+[tool.ruff.format]
+# description = "https://docs.astral.sh/ruff/settings/#format_quote-style"
+quote-style = "double"
+#indent-style = "tab" 使用tab缩进
+docstring-code-format = true
+skip-magic-trailing-comma = true
+
